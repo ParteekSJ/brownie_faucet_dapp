@@ -1,0 +1,4 @@
+project_structure:
+  build: client/src/artifacts
+networks:
+  default: ganache-local

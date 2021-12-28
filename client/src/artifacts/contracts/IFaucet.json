@@ -1,0 +1,188 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "addFunds",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawFunds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "1": "contracts/IFaucet.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/IFaucet.sol",
+    "exportedSymbols": {
+      "IFaucet": [
+        200
+      ]
+    },
+    "id": 201,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 191,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 200,
+        "linearizedBaseContracts": [
+          200
+        ],
+        "name": "IFaucet",
+        "nameLocation": "458:7:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a26759cb",
+            "id": 194,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addFunds",
+            "nameLocation": "481:8:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 192,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "489:2:1"
+            },
+            "returnParameters": {
+              "id": 193,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "508:0:1"
+            },
+            "scope": 200,
+            "src": "472:37:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "155dd5ee",
+            "id": 199,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawFunds",
+            "nameLocation": "524:13:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 197,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 196,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "546:6:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 199,
+                  "src": "538:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 195,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "538:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:16:1"
+            },
+            "returnParameters": {
+              "id": 198,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "562:0:1"
+            },
+            "scope": 200,
+            "src": "515:48:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 201,
+        "src": "448:117:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:534:1"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.7+commit.e28d00a7"
+  },
+  "contractName": "IFaucet",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    448,
+    565
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "ce00d31a7edd21b38e0c4d40ee4844f23c27bf27",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\n// I - Interface : An interface in the Java programming language is an abstract type that is used to specify a behavior that classes must implement. They are similar to protocols.\n\n// 1. Cannot inherit from other smart contracts. Can only inherit from other interfaces.\n// 2. Cannot declare a constructor\n// 3. Cannot declare state variables\n// 4. All declared functions must be 'external'\n\ninterface IFaucet {\n    function addFunds() external payable;\n\n    function withdrawFunds(uint256 amount) external;\n}\n",
+  "sourceMap": "",
+  "sourcePath": "contracts/IFaucet.sol",
+  "type": "interface"
+}
